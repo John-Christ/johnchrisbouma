@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Thank you! Your message has been sent. (This is a demo)');
+    alert('Thank you! Your message has been sent.');
     contactForm.reset();
 });
 
