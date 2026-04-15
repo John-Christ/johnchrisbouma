@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Christ BOUMA | Architecte Digital</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --secondary: #3498db;
+            --text: #333;
+            --light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            color: var(--text);
+            background: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .profile-title {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            border-left: 5px solid var(--secondary);
+            padding-left: 15px;
+            color: var(--primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+
+        .tech-pill {
+            display: inline-block;
+            background: #e1e8ed;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary);
+            color: white;
+        }
+
+        .contact-link {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="profile-title">John Christ BOUMA</h1>
+    <p class="subtitle">Ingénieur en Computer Science & Architecte de Systèmes [cite: 18]</p>
+    <p>Expertise en infrastructures numériques et développement Fullstack [cite: 10, 22]</p>
+</header>
+
+<div class="container">
+    <section class="section">
+        <h2>À propos</h2>
+        <p>Expertise de haut niveau en architecture de systèmes d'information, alliant rigueur analytique (IB) et vision stratégique mondiale[cite: 20, 22]. Fondateur de <strong>Boyo Lifestyle</strong>, je transforme les besoins métiers en solutions technologiques résilientes[cite: 21].</p>
+    </section>
+
+    <section class="section">
+        <h2>Expertises Clés</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-code fa-2x" style="color:var(--secondary)"></i>
+                <h3>Développement Numérique</h3>
+                <p>Maîtrise complète du cycle Fullstack (Angular, Spring Boot, Java) pour des applications gouvernementales et privées[cite: 10, 27].</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-server fa-2x" style="color:var(--secondary)"></i>
+                <h3>Infrastructures & Réseaux</h3>
+                <p>Pilotage d'écosystèmes numériques complexes et maintenance critique des systèmes d'information[cite: 33].</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-globe fa-2x" style="color:var(--secondary)"></i>
+                <h3>Management Digital</h3>
+                <p>Accompagnement à l'homologation internationale (IB) par la digitalisation complète des processus institutionnels[cite: 33].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Technologies</h2>
+        <div>
+            <span class="tech-pill">Angular</span>
+            <span class="tech-pill">Spring Boot</span>
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">GitHub</span>
+            <span class="tech-pill">Systems Architecture</span>
+            <span class="tech-pill">Network Maintenance</span>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 John Christ BOUMA - Nzeng-Ayong, Libreville [cite: 5]</p>
+    <p>Contact : <a href="mailto:johnchristbouma@gmail.com" class="contact-link">johnchristbouma@gmail.com</a> [cite: 3]</p>
+</footer>
+
+</body>
+</html>
