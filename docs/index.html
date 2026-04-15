@@ -3,126 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Christ BOUMA | Expert en Écosystèmes Digitaux</title>
-    <link rel="stylesheet" href="style.css">
+    <title>John Christ BOUMA | Portfolio Professionnel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        :root {
+            --primary-color: #1a2a3a;
+            --secondary-color: #3498db;
+            --light-bg: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; }
+        .navbar { background: var(--primary-color); padding: 1rem 0; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .hero { background: linear-gradient(rgba(26, 42, 58, 0.9), rgba(26, 42, 58, 0.9)), url('https://via.placeholder.com/1500x800'); background-size: cover; color: white; padding: 120px 0; }
+        .highlight { color: var(--secondary-color); }
+        .section-padding { padding: 80px 0; }
+        .card { border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .skill-tag { background: #e1e8ed; color: var(--primary-color); padding: 5px 15px; border-radius: 20px; display: inline-block; margin: 5px; font-weight: 500; }
+        .footer { background: var(--primary-color); color: white; padding: 40px 0; text-align: center; }
+        .btn-primary { background-color: var(--secondary-color); border: none; padding: 12px 30px; }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">PORTFOLIO<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">Profil</a></li>
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#education">Formation</a></li>
-            <li><a href="https://play.google.com/store/apps/dev?id=8876628098820273159" target="_blank">Projets</a></li>
-            <li><a href="#contact" class="btn">Me Contacter</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BOUMA<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-info ms-lg-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Je suis <span class="highlight">John Christ Bouma</span></h1>
-            <p>Expert en Écosystèmes Digitaux & Architecte Fullstack</p>
-            <div class="cta-group">
-                <a href="https://play.google.com/store/apps/dev?id=8876628098820273159" class="btn primary" target="_blank">Voir mes Applications</a>
-                <br><br>
-                <p><i class="fas fa-phone"></i> (+241) 074 70 19 31 | <i class="fas fa-envelope"></i> johnchristbouma@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Nzeng-Ayong, Libreville, Gabon</p>
+    <header id="home" class="hero text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">John Christ <span class="highlight">BOUMA</span></h1>
+            <p class="lead mb-4">Ingénieur en Computer Science (Formation IB) & Architecte de Systèmes Résilients</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://play.google.com/store/apps/dev?id=8876628098820273159" target="_blank" class="btn btn-primary btn-lg">Découvrir mes Projets</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Collaborer</a>
             </div>
         </div>
     </header>
 
-    <section id="about" class="about">
-        <h2>À propos de moi</h2>
-        <p>Ingénieur en informatique de formation IB (International Baccalaureate)[cite: 18, 20]. J'allie une rigueur analytique de haut niveau à une vision stratégique des systèmes d'information. Mon approche consiste à concevoir des architectures résilientes répondant aux standards technologiques mondiaux les plus exigeants.</p>
-        
-        <div class="skills">
-            <h3>Compétences Clés</h3>
-            <span class="skill-tag">Architecture Systèmes & Web</span>
-            <span class="skill-tag">Développement Fullstack (Angular, Spring Boot, Java)</span>
-            <span class="skill-tag">Management Digital</span>
-            <span class="skill-tag">Maintenance & Réseaux</span>
-            <span class="skill-tag">Anglais & Français (Courant)</span>
+    <section id="about" class="section-padding container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="fw-bold border-start border-4 border-primary ps-3 mb-4">À Propos</h2>
+                <p>Expert dans la conception d'architectures numériques haut de gamme, j'allie une rigueur analytique héritée du programme International Baccalaureate à une maîtrise technique du développement Fullstack[cite: 20, 45].</p>
+                <div class="mt-4">
+                    <span class="skill-tag">Angular & Spring Boot</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Systèmes & Réseaux</span>
+                    <span class="skill-tag">Architecture UX/UI</span>
+                    <span class="skill-tag">Management Digital</span>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="card p-4 bg-light">
+                    <h4>Langues</h4>
+                    <p class="mb-1"><strong>Français :</strong> Courant [cite: 8, 52]</p>
+                    <p class="mb-3"><strong>Anglais :</strong> Courant (Certifié C2) [cite: 7, 53]</p>
+                    <hr>
+                    <h4>Contact Direct</h4>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i> (+241) 074 70 19 31 [cite: 2, 48]</p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i> johnchristbouma@gmail.com [cite: 3, 49]</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="experience" class="experience">
-        <h2>Expérience Professionnelle</h2>
-        
-        <div class="exp-item">
-            <h3>Responsable Développement & Réseaux | Montessori KIDDY PLANET</h3>
-            <p class="date">Septembre 2025 - Présent.</p>
-            <ul>
-                <li>Pilotage de l'écosystème numérique pour l'homologation IB de l'établissement.</li>
-                <li>Architecture du site web et déploiement d'outils collaboratifs.</li>
-                <li>Digitalisation des supports pédagogiques.</li>
-            </ul>
-        </div>
-
-        <div class="exp-item">
-            <h3>Fondateur & Développeur Principal | BOYO LIFESTYLE PTY LTD</h3>
-            <p class="date">2025 - Présent.</p>
-            <ul>
-                <li>Conception de solutions logicielles innovantes comme Misu Bala et Boyo Quiz.</li>
-                <li>Gestion de l'intégration des services de paiement.</li>
-            </ul>
-        </div>
-
-        <div class="exp-item">
-            <h3>Administrateur et Interprète Technique | GSEZ - MAHATHI - GLSY</h3>
-            <p class="date">Octobre 2024 - Avril 2025.</p>
-            <ul>
-                <li>Coordination administrative et interface technique bilingue au Port d'Owendo.</li>
-            </ul>
-        </div>
-
-        <div class="exp-item">
-            <h3>Développeur Fullstack (Stage) | ANINF</h3>
-            <p class="date">Octobre 2023 - Mars 2024.</p>
-            <ul>
-                <li>Développement d'applications web critiques pour le gouvernement Gabonais.</li>
-                <li>Utilisation des technologies Angular et Spring Boot.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="education" class="education">
-        <h2>Formation</h2>
-        <div class="edu-item">
-            <h3>Diplôme en Génie Logiciels</h3>
-            <p>Brooklyn City College, Afrique du Sud (2019-2021). </p>
-        </div>
-        <div class="edu-item">
-            <h3>Certificat de langue anglaise (C2)</h3>
-            <p>ABC School Language, Afrique du Sud (2018-2019).</p>
-        </div>
-        <div class="edu-item">
-            <h3>Baccalauréat</h3>
-            <p>Lycée Georges Mabignath, Gabon (2016).</p>
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Parcours Professionnel</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 p-4">
+                        <span class="text-muted">2025 - Présent [cite: 32, 69]</span>
+                        <h4 class="fw-bold mt-2">Responsable Développement & Réseaux</h4>
+                        <h5 class="text-primary">Kiddy Planet & Elite School [cite: 31, 67]</h5>
+                        <p class="mt-3">Pilotage de l'écosystème numérique pour l'homologation IB. Architecture web, outils collaboratifs et digitalisation pédagogique[cite: 33, 72].</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 p-4">
+                        <span class="text-muted">2025 - Présent [cite: 77]</span>
+                        <h4 class="fw-bold mt-2">Fondateur & Développeur Principal</h4>
+                        <h5 class="text-primary">Boyo Lifestyle Pty Ltd [cite: 75]</h5>
+                        <p class="mt-3">Conception de solutions innovantes (Misu Bala, Boyo Quiz) avec intégration de paiements et conformité réglementaire[cite: 78, 79].</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 p-4">
+                        <span class="text-muted">2023 - 2024 [cite: 25, 87]</span>
+                        <h4 class="fw-bold mt-2">Développeur Fullstack</h4>
+                        <h5 class="text-primary">ANINF (Gouvernement Gabonais) [cite: 24, 84]</h5>
+                        <p class="mt-3">Développement d'applications web critiques pour les infrastructures numériques nationales (Angular, Spring Boot)[cite: 27, 88].</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 p-4">
+                        <span class="text-muted">2024 - 2025 [cite: 29, 82]</span>
+                        <h4 class="fw-bold mt-2">Administrateur & Interprète Technique</h4>
+                        <h5 class="text-primary">GSEZ - Port Owendo [cite: 28, 80]</h5>
+                        <p class="mt-3">Interface bilingue et gestion administrative dans un cadre industriel hautement technique[cite: 30, 83].</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Me contacter</h2>
-        <p>Disponible pour des projets innovants et des architectures résilientes.</p>
-        <form id="contact-form">
-            <input type="text" placeholder="Nom" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Votre message" rows="5" required></textarea>
-            <button type="submit" class="btn primary">Envoyer le message</button>
-        </form>
+    <section id="education" class="section-padding container">
+        <h2 class="text-center fw-bold mb-5">Formation Académique</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <i class="fas fa-graduation-cap fa-3x mb-3 highlight"></i>
+                <h5>Diplôme en Génie Logiciels</h5>
+                <p class="text-muted">Brooklyn City College, Afrique du Sud [cite: 35, 91]</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-certificate fa-3x mb-3 highlight"></i>
+                <h5>Certificat d'Anglais (C2)</h5>
+                <p class="text-muted">ABC School Language, Afrique du Sud [cite: 38, 93]</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-school fa-3x mb-3 highlight"></i>
+                <h5>Baccalauréat</h5>
+                <p class="text-muted">Lycée Georges Mabignath, Gabon [cite: 40, 95]</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <center>
-            <p>&copy; 2026 John Christ Bouma. Tous droits réservés.</p>
-            <p><a href="https://john-christ.github.io/johnchrisbouma/" style="color:white;">Portfolio Officiel</a></p>
-        </center>
+    <section id="contact" class="section-padding bg-light container-fluid text-center">
+        <h2 class="fw-bold mb-4">Prêt pour une nouvelle collaboration ?</h2>
+        <p class="mb-5">Disponible pour des projets de transformation digitale et d'architecture SI.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="card p-4 text-start">
+                    <div class="mb-3">
+                        <label class="form-label">Votre Nom</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Votre Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 John Christ BOUMA. Ingénieur en Computer Science.</p>
+            <small class="text-muted">Libreville, Gabon</small>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
